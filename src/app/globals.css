@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Dirección visual C · Cancha (docs/decisiones-fase-3.md) */
+@theme inline {
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-bg: #f4f5f2;
+  --color-surface: #ffffff;
+  --color-line: #e3e6e1;
+  --color-line-soft: #edefeb;
+  --color-field: #e6e8e4;
+  --color-ink: #121412;
+  --color-ink-2: #3a3f3a;
+  --color-muted: #5e645e;
+  --color-faint: #9aa09a;
+  --color-brand: #1f7a4d;
+  --color-brand-dark: #165c39;
+  --color-brand-soft: #e3f1e9;
+  --color-danger: #b42318;
+  --color-danger-soft: #fde8e5;
+  --color-info-soft: #e4edff;
+  --color-info-ink: #0f2a5c;
+
+  /* Tablero (CA-52) */
+  --color-cell-ind: #1f7a4d;
+  --color-cell-grp: #cfe0ff;
+  --color-cell-grp-line: #9dbbf0;
+  --color-cell-alq: #f0a928;
+  --color-cell-alq-ink: #2e2000;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
